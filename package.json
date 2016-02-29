@@ -1,0 +1,13 @@
+{
+  "name": "readlater",
+  "description": "Kirby Readlater Plugin",
+  "author": "Roy Lodder <http://roylodder.com>",
+  "contributors": [
+    {
+      "name": "Bastian Allgeier",
+      "email": "bastian@getkirby.com"
+    }
+  ],
+  "version": "2.0.0",
+  "type": "kirby-plugin"
+}
