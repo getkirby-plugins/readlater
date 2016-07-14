@@ -1,10 +1,10 @@
 <?php
 
 function readlater($content, $tool, $label=false, $params=array()) {
-  
+
   $tools = array(
     'instapaper' => array(
-      'link'  => 'http://www.instapaper.com/hello2?url={url}&title={title}',
+      'link'  => 'https://www.instapaper.com/hello2?url={url}&title={title}',
       'label' => 'Add to Instapaper',
     ),
     'pocket' => array(
@@ -12,20 +12,20 @@ function readlater($content, $tool, $label=false, $params=array()) {
       'label' => 'Save to Pocket',
     ),
     'readability' => array(
-      'link'  => 'http://www.readability.com/save?url={url}',
+      'link'  => 'https://www.readability.com/save?url={url}',
       'label' => 'Add to Readability',
     )
   );
 
   if(!array_key_exists($tool, $tools)) return false;
-  
+
   // make it possible to pass params
-  // as third object instead of fourth. 
+  // as third object instead of fourth.
   if(is_array($label)) {
     $params = $label;
     $label  = false;
   }
-  
+
   $defaults = array(
     'label'  => $label,
     'rel'    => false,
